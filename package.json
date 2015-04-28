@@ -1,0 +1,32 @@
+{
+  "name": "EncritptXML",
+  "version": "0.0.2",
+  "devDependencies": {
+    "mocha": "*",
+    "should": "~1.2.2"
+  },
+  "main": "encriptar.js",
+  "repository":"https://github.com/acner/EncritptXML",
+  "keywords": [
+    "xml",
+    "encryption",
+    "xmlenc",
+    "encriptar-xml",
+    "xml-encryption"
+  ],
+  "author": "Acner Pinazo(Auth0)",
+  "contributors": [
+    "Acner Pinazo <acner@elyon.com.py> (http://www.elyon.com.py)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "xmldom": "~0.1.15",
+    "ejs": "~0.8.3",
+    "async": "~0.2.7",
+    "xpath": "0.0.5",
+    "node-forge": "0.2.24"
+  },
+  "scripts": {
+    "test": "node encriptar.js"
+  }
+}

@@ -1,0 +1,78 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://xmlns.tigo.com/RequestHeader/V3" xmlns:v31="http://xmlns.tigo.com/LogHeader/V3" xmlns:sch="http://xmlns.tigo.com/TigoBusiness/GetBearerUserRequest/V2/schema" xmlns:v3p="http://xmlns.tigo.com/RequestHeader/V3pagination" xmlns:sch1="http://xmlns.tigo.com/ClientSchema/V1/schema" xmlns:v2="http://xmlns.tigo.com/ParameterType/V2">
+<soapenv:Header>
+       <wsse:Security soap1:mustUnderstand="1"
+						xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+						xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+						xmlns:soap1="soapenv">
+						<wsse:UsernameToken wsu:Id="UsernameToken-1">
+							<wsse:Username>username</wsse:Username>
+							<wsse:Password
+								Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+							<wsse:Nonce
+								EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">WpoPGPQyggKQhJeDG02SyQ==</wsse:Nonce>
+							<wsu:Created>2014-04-28T16:17:12.957Z</wsu:Created>
+						</wsse:UsernameToken>
+					</wsse:Security>
+
+<v3:RequestHeader>
+<v3:GeneralConsumerInformation>
+<!--Optional:-->
+<v3:consumerID>?</v3:consumerID>
+<!--Optional:-->
+<v3:transactionID>?</v3:transactionID>
+<!--Optional:-->
+<v3:country>?</v3:country>
+<v3:correlationID>?</v3:correlationID>
+</v3:GeneralConsumerInformation>
+</v3:RequestHeader>
+<v31:LogHeader>
+<!--Optional:-->
+<v31:logRequest>FALSE</v31:logRequest>
+<!--Optional:-->
+<v31:logResponse>FALSE</v31:logResponse>
+<!--Optional:-->
+<v31:userAgent>TBOL</v31:userAgent>
+<!--Optional:-->
+<v31:ipClient>172.30.40.246</v31:ipClient>
+<!--Optional:-->
+<v31:aplication>
+<v31:name>TBOL</v31:name>
+<v31:user>TBOL</v31:user>
+</v31:aplication>
+<!--Optional:-->
+<v31:msisdn>77110005</v31:msisdn>
+</v31:LogHeader>
+</soapenv:Header>
+<soapenv:Body>
+<sch:getBearerUserRequest>
+<v3p:RequestHeader>
+<v3p:GeneralConsumerInformation>
+<!--Optional:-->
+<v3p:consumerID>?</v3p:consumerID>
+<!--Optional:-->
+<v3p:transactionID>?</v3p:transactionID>
+<!--Optional:-->
+<v3p:intialResultNumber>1</v3p:intialResultNumber>
+<!--Optional:-->
+<v3p:resultsPerPage>5</v3p:resultsPerPage>
+<!--Optional:-->
+<v3p:country>?</v3p:country>
+<v3p:correlationID>?</v3p:correlationID>
+</v3p:GeneralConsumerInformation>
+</v3p:RequestHeader>
+<sch:requestBody>
+<!--Optional:-->
+<sch:client>
+<!--Optional:-->
+<sch1:id>147612027</sch1:id>
+<!--Optional:-->
+<sch1:idType>DOCUMENT</sch1:idType>
+</sch:client>
+<!--Optional:-->
+<!--Optional:-->
+<sch:contractNumber>6160806</sch:contractNumber>
+<!--Optional:-->
+</sch:requestBody>
+</sch:getBearerUserRequest>
+</soapenv:Body>
+</soapenv:Envelope>
