@@ -22,7 +22,7 @@ xmlenc.encrypt(encryptedContent, options, function(err, result) {
 	
 })
 ##desencriptar
-```
+```js
 var encryptedContent = fs.readFileSync(__dirname + '/encriptado.xml').toString()
 xmlenc.decrypt(encryptedContent, { key: fs.readFileSync(__dirname + '/auth0.key')}, function(err, decrypted) {
    console.log("Leyendo el xml encriptado\n")
