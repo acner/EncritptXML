@@ -21,6 +21,7 @@ xmlenc.encrypt(encryptedContent, options, function(err, result) {
      	fs.writeFileSync(__dirname +"/encriptado.xml", result)
 	
 })
+```
 ##desencriptar
 ```js
 var encryptedContent = fs.readFileSync(__dirname + '/encriptado.xml').toString()
