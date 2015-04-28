@@ -1,5 +1,8 @@
 # EncritptXML
 Encriptar XML con xml-encrypt, 
+Este script hace que todo el documento xml este encriptado, es practico a la hora de enviar informaciones a un endpoint en este ejemplo solo hice que guardara en un archivo, podes hacerlo que responda el node directamente.
+
+Xml-encrypt soporta mas clases de certificados.
 
 ### Forma de trabajar
 
