@@ -32,3 +32,5 @@ xmlenc.decrypt(encryptedContent, { key: fs.readFileSync(__dirname + '/auth0.key'
 ## Author
 
 [Acner Pinazo](www.elyon.com.py)
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
